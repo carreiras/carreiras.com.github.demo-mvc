@@ -8,8 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "ENDEREÇOS")
-@SuppressWarnings("serial")
-public class Endereco {
+public class Endereco extends AbstractEntity<Long>{
 
     @Column(nullable = false)
     private String logradouro;

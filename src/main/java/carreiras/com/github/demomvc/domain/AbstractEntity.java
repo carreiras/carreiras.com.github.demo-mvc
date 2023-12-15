@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 
 @MappedSuperclass
+@SuppressWarnings("serial")
 public abstract class AbstractEntity<ID extends Serializable> implements Serializable {
 
     @Id
